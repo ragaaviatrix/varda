@@ -1,9 +1,7 @@
 Before you start deploying Controller and Copilot
 Subcribe to:
 
-https://aws.amazon.com/marketplace/pp/prodview-nsys2ingy6m3w?qid=1627375660123
-
-https://aws.amazon.com/marketplace/pp/prodview-hr74smekrfqiu?qid=1627375694838
+https://aws.amazon.com/marketplace/server/procurement?productId=28c70cf4-6f44-46eb-a823-d88629a699ae
 
 Make sure that there is no existing AWS Console > IAM aviatrix-role-ec2 / aviatrix-role-app / aviatrix-assume-role-policy / aviatrix-app-policy
 
