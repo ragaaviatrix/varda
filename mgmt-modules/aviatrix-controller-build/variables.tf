@@ -63,7 +63,7 @@ variable name_prefix {
 }
 
 variable type {
-  default     = "byol"
+  default     = "meteredplatinumcopilot"
   type        = string
   description = "Type of billing, can be 'meteredplatinum' or 'BYOL'."
 }
@@ -80,7 +80,7 @@ locals {
 
   name_prefix     = var.name_prefix != "" ? "${var.name_prefix}-" : ""
   images_byol     = jsondecode(data.http.avx_iam_id.body).BYOL
-  images_platinum = jsondecode(data.http.avx_iam_id.body).MeteredPlatinum
+  images_platinum = jsondecode(data.http.avx_iam_id.body).MeteredPlatinumCopilot
   ami_id          = var.type == "BYOL" || var.type == "byol"? local.images_byol[data.aws_region.current.name] : local.images_platinum[data.aws_region.current.name]
   common_tags = merge(
     var.tags, {
