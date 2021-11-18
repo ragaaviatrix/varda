@@ -105,7 +105,6 @@ variable "attached_gw_egress" {
 variable "security_domain" {
   description = "Provide security domain name to which spoke needs to be deployed. Transit gateway mus tbe attached and have segmentation enabled."
   type        = string
-  default     = ""
 }
 
 variable "single_az_ha" {

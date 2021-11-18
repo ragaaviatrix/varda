@@ -39,3 +39,23 @@ variable "fqdn_gw_name_1" {
 variable "fqdn_gw_name_2" {
   default = "fqdn-2"
 }
+
+variable "shared_services_sd" {
+  default = "shared_services"
+}
+
+variable "production_sd" {
+  default = "production"
+}
+
+variable "non_production_sd" {
+  default = "non_production"
+}
+
+variable "spoke_3_name" {
+  default = "spoke-3"
+}
+
+variable "cidr_spoke_3" {
+  default = "10.3.0.0/16"
+}
